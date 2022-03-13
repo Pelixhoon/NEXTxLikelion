@@ -21,13 +21,13 @@
 #
 #### Features
 #
-- I love to travel to another country (especially in Europe or North America).   
+- I love to travel to foriegn country (especially in Europe or North America).   
 -- I've been to Paris, London, Porto, Balcellona, Madrid, Nice, Tokyo, Taipei, Hongkong and Atlanta. 
-- And also love to take pictures of the beautiful scenery in my daily life.    
+- And also love to take pictures of the scenery in my daily life.    
 -- This is my photography Instagram "@pelixgraphy"
 - My favorite foods are Sushi, Hamburger, Noodles(every kinds of), Bread!
-- I live in Bangbae, Seocho-gu, with my whole family now and I nearly use the subway to go to Anam.
-- Love to listen pop, hiphop music! Among foreign artist, I like Weeknd, LANY, Shawn Mendes, Coldplay, Chainsmokers, Bieber and Ariana. And I like Changmo, Ash Island, Homies , Taeyeon in Korean Artist.  
+- I live in Bangbae, Seocho-gu, with my family and I nearly use the subway to go to Anam.
+- Love to listen pop, hiphop music~ Among foreign artist, I like Weeknd, LANY, Shawn Mendes, Coldplay, Chainsmokers, Bieber and Ariana. And I like Changmo, Ash Island, Homies , Taeyeon in Korean Artist.  
 
 #
 #### Goals for 2022
@@ -36,8 +36,8 @@ This year is also the first year I returned from the military service, so there 
 
 |  | Goals for this year|
 | ------ | ------ |
-| Major | Listen carefully to the computer science major lecture and follow it well|
-| NEXTxLikelion | Learn a lot from the session and have a good time with good people |
+| Major | Listen carefully to the computer science lecture and follow it well|
+| NEXTxLikelion | Learn a lot from the session and have a good time with people |
 | Workout | Exercising at the gym at least 3 times a week |
 | Photography | Post on Instagram at least once a week |
 
