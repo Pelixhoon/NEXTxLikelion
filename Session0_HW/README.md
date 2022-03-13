@@ -32,12 +32,12 @@
 #
 #### Goals for 2022
 #  
-This year is also the first year I returned from the military service, so there are some goals to I really wanna achieve in this year. 
+This year is also the first year I returned from the military service, so there are some goals that I really wanna achieve in this year. 
 
 |  | Goals for this year|
 | ------ | ------ |
 | Major | Listen carefully to the computer science lecture and follow it well|
-| NEXTxLikelion | Learn a lot from the session and have a good time with people |
+| NEXTxLikelion | Learn a lot from the session and have a good time with the people |
 | Workout | Exercising at the gym at least 3 times a week |
 | Photography | Post on Instagram at least once a week |
 
