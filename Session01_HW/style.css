@@ -1,0 +1,43 @@
+p{
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    }
+
+h3, h4 {
+
+    text-align: center;
+}
+
+* {
+    font-family: 'Gowun Batang', serif;
+}
+
+h1 {
+    font-family: 'Gowun Batang', serif;
+    font-weight: bold;
+}
+
+.last {
+    font-weight: bold;
+}
+
+.title
+{
+    position: fixed;
+    border: 4px solid; 
+    left: 50px;
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+    
+}
+
+.last {
+     background-color: lightblue;
+     color: white;
+     border-color: lightblue
+}
