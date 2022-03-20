@@ -1,0 +1,327 @@
+.total {
+    display: flex;
+    align-content: flex-start;
+}
+
+.container {
+    background-color: white;
+    position: absolute;
+    width: 375px;
+    height: 359px;
+    left: 0px;
+    top: 0px;
+    box-shadow: 0px 0.33px 0px rgba(60, 60, 67, 0.29);
+    border-style: none;
+    border-color: black;
+    
+}
+
+.account_name {
+    display: flex;
+    flex-direction: row;
+}
+
+#back_button {
+    position: absolute;
+    left: 3%;
+    top: 3%;
+}
+
+#certified {
+    position: relative;
+    left: 123px;
+    top: 13px;
+    max-height: 14px;
+    max-width: 14px;
+}
+
+#rosename {
+    position: relative;
+    left: 120px;
+    top: -10px;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: nomal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: black;
+}
+
+#notification {
+    position: relative;
+    left: 165px;
+    top: 8px;
+    max-height: 20px;
+    max-width: 30px;
+}
+
+#threedots {
+    position: relative;
+    right: -180px;
+    top: 6px;
+    max-height: 30px;
+    max-width: 30px;
+}
+
+#rose {
+    position: relative;
+    left: 9px;
+    top: -15px;
+    max-height: 86px;
+    max-width: 86px;
+}
+
+.numbers {
+    font-family: 'Roboto', sans-serif;
+    font-style: nomal;
+    font-weight: 600;
+    font-size: 14px;
+    color: black;
+}
+
+#posts {
+    position: relative;
+    left: 155px;
+    top: -90px;
+}
+
+#followers {
+    position: relative;
+    left: 225px;
+    top: -120px;
+}
+
+#following {
+    position: relative;
+    left: 320px;
+    top: -150px;
+}
+
+.koreans {
+    font-family: 'Roboto', sans-serif;
+    font-style: nomal;
+    font-size: 14px;
+}
+
+#post_k {
+    position: relative;
+    left: 148px;
+    top: -165px;
+}
+
+#follower_k {
+    position: relative;
+    left: 230px;
+    top: -196px;
+}
+
+#following_k {
+    position: relative;
+    left: 305px;
+    top: -227px;
+}
+
+#name {
+    font-family: 'Roboto', sans-serif;
+    font-style: nomal;
+    font-size: 15px;
+    font-style: bold;
+    
+    position: relative;
+    left: 15px;
+    top: -210px;
+
+}
+
+#selfintro {
+    position: relative;
+    font-size: 14px;
+    left: 15px;
+    top: -223px;
+}
+
+#youtubelink {
+    font-size: 14px;
+    position: relative;
+    left: 15px;
+    top: -241px;
+    text-decoration: none;
+}
+
+#translation {
+    position: relative;
+    font-size: 14px;
+    left: 15px;
+    top: -256px;
+}
+
+.buttons {
+    position: relative;
+    top: -255px;
+    left: 17px;
+}
+
+#follow_button {
+    background-color: #1FA1FF;
+    color: white;
+    border-color: #1FA1FF;
+    margin-right: 2px;
+    border-radius: 3px;
+    width: 150px;
+    height: 30px;
+    border: 0.1px;
+    
+}
+
+#message_button {
+    background-color: white;
+    border-radius: 3px;
+    border: solid 1px;
+    border-color: rgb(153, 152, 152);
+    width: 150px;
+    height: 30px;
+    
+}
+
+#other_recommend {
+    background-color: white;
+    border-radius: 2px;
+    border: solid 1px;
+    border-color: rgb(153, 152, 152);
+
+}
+
+#discover {
+    transform: rotate(270deg);
+    background-color: white;
+    height: 12px;
+    width: auto;
+    border-radius: 3px;
+}
+
+#other_recommend {
+    width: 30px;
+    height: 30px;
+    top: 3px;
+    border-radius: 3px;
+}
+
+#highlight_photo {
+    position: relative;
+    width: 310px;
+    height: 90px;
+
+    top: -240px; 
+    left: 8px;
+}
+
+.section {
+    background-color: white;
+    position: absolute;
+    width: 375px;
+    height: 50px;
+    box-shadow: 0px 0.33px 0px rgba(60, 60, 67, 0.29);
+    border-style: none;
+    border-color: black;
+
+    top: 360px;
+    left: 0px;
+}
+
+#grid {
+    position: relative;
+    width: 25px;
+    height: auto;
+    top: 25%;
+    left: 10%;
+
+}
+
+#reels {
+    position: relative;
+    width: 25px;
+    height: auto;
+    top: 25%;
+    left: 27.5%;
+}
+
+#play {
+    position: relative;
+    width: 25px;
+    height: auto;
+    top: 25%;
+    left: 45%;
+}
+
+#users {
+    position: relative;
+    width: 25px;
+    height: auto;
+    top: 25%;
+    left: 60%;
+}
+
+#feed1 {
+    position: relative;
+    width: 375px;
+    height: auto;
+
+    top: 80%;
+    left: -8px;
+}
+
+#feed2 {
+    position: relative;
+    width: 375px;
+    height: auto;
+
+    top: 129.5%;
+    left: -388px;
+}
+
+.final {
+    background-color: white;
+    position: fixed;
+    width: 377px;
+    height: 60px;
+    bottom: 0;
+    left: -2px;
+}
+
+#home {
+    position: relative;
+    width: 28px;
+    height: auto;
+    bottom: -20%;
+    left: 5%
+}
+#search {
+    position: relative;
+    width: 30px;
+    height: auto;
+    bottom: -10%;
+    left: 16%;
+}
+#reels2 {
+    position: relative;
+    width: 30px;
+    height: auto;
+    bottom: -10%;
+    left: 28%;
+}
+#shopping {
+    position: relative;
+    width: 30px;
+    height: auto;
+    bottom: -8%;
+    left: 39%;
+}
+#my_profile {
+    position: relative;
+    width: 30px;
+    height: auto;
+    bottom: -20%;
+    left: 50%;
+}
