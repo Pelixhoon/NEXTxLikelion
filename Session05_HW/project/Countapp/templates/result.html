@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'result.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,700&display=swap" rel="stylesheet">
+    <title>Letter Counter</title>
+</head>
+<body>
+    <div id="container">
+        <p id="title_e">Letter Counter Result</p>
+        <p id="title1">입력한 텍스트</p>
+        <p id="text">{{text}}</p> 
+        <div class="result">
+            <p class="k">공백포함</p> 
+            <p class="out">{{total_len}}</p> 
+            <p class="k">공백제외</p> 
+            <p class="out">{{no_blank_len}}</p>
+            <p class="k">단어 수</p>
+            <p class="out">{{word_len}}</p>  
+        </div>
+    </div>
+    <p id="producer">Copyright 2022. Myunghoon all rights reserved.</p>
+</body>
+</html>

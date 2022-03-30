@@ -1,0 +1,43 @@
+#container {
+    border: solid 1px;
+    width: 50%;
+    height: 600px;
+    background-color:rgb(12, 12, 51);
+
+    position: relative;
+    left: 25%;
+}
+
+textarea {
+    font-size: 14px;
+    font-weight: 400;
+    color: black;
+}
+
+#title {
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+}
+
+#title_k {
+    font-size: 15px;
+    font-weight: 800;
+    position: relative;
+    left: 0%;
+    top: -15px;
+    color: white;
+    
+}
+
+#button {
+    width: 20%;
+    height: 30px;
+}
+
+
+body {
+    text-align: center;
+}
+

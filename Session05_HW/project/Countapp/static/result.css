@@ -1,0 +1,68 @@
+body {
+    color: black;
+}
+
+#container {
+    border: solid 1px;
+    width: 40%;
+    height: 500px;
+    background-color:rgb(12, 12, 51);
+    
+    position: relative;
+    left: 30%;
+}
+
+#title_e {
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+
+}
+
+#title1 {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+}
+
+#text {
+    border: solid 1px;
+    width: 500px;
+    height: 270px;
+    text-align: center;
+
+    position: relative;
+    left: 6%;
+
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    background-color: white;
+}
+
+.result {
+    color: white;
+
+    display: flex;
+    justify-content: center;
+
+    font-size: 20px;
+}
+
+#result1 {
+    text-align: center;
+}
+
+#producer {
+    text-align: center;
+}
+
+.out {
+    color: rgb(247, 214, 68);
+    margin-left: 10px;
+    margin-right: 15px;
+    font-weight: 900;
+}
+
