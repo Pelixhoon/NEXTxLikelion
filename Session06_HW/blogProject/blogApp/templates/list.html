@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'list.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Blog</title>
+</head>
+<body>
+    <div class="container">
+        <h2 id="title">Myunghoon's blog</h2>
+        <ol>
+            <li>
+                <a href="{% url 'category' 'hobby' %}">취미</a>  <span>{{hobbycount}}</span>
+            </li>
+            <br>
+            <li>
+                <a href="{% url 'category' 'food' %}" class="contents">음식</a>   <span>{{foodcount}}</span>
+            </li>
+            <br>
+            <li>
+                <a href="{% url 'category' 'programming' %}">프로그래밍</a>   <span>{{programmingcount}}</span>
+            </li>
+            <br>
+        </ol>
+        <div id="last"><a href="{% url 'new' %}">글 쓰러 가기</a></div>
+    </div>
+</body>
+</html>

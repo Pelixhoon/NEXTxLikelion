@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'detail.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Blog</title>
+</head>
+<body>
+    <div class="container">
+        <h2 id="title">Myunghoon's blog</h2>
+        <h2 id="title2">글 상세 페이지</h2>
+        <div id="contents">
+            <div>
+                <h3>제목</h3>
+                <div>{{ article.title }}</div>
+            </div>
+            <div>
+                <h3>카테고리</h3>
+                <div>{{ article.category }}</div>
+                <h3>내용</h3>
+                <div>{{ article.content }}</div>
+                <h3>작성시간</h3>
+                <div>{{ article.datetime }}</div>
+            </div>
+            <br>
+            <br>
+            <a href="{% url 'list' %}">전체 목록으로 돌아가기</a>
+        </div>
+    </div>
+</body>
+</html>

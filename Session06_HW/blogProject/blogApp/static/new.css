@@ -1,0 +1,36 @@
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+a, a:visited, a:hover, a:active {
+    color: inherit;
+}
+
+.container {
+    width: 40%;
+    height: 400%;
+}
+
+#title {
+    
+    font-size: 30px;
+    font-weight: 500;
+    color: rgb(248, 175, 175);
+
+    border-bottom: solid 1px;
+    height: 70px;
+}
+
+#last {
+
+    position: relative;
+    left: 130px;
+    top: 20px;
+
+    width: 70px;
+    height: 40px;
+
+    color: rgb(250, 153, 153);
+    background-color: white;
+    border-color: rgb(248, 175, 175);
+}

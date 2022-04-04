@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'new.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Blog</title>
+</head>
+<body>
+    <div class="container">
+        <h2 id="title">Myunghooon's blog</h2>
+        <form action="/new" method="post">
+            {% csrf_token %}
+            <div>
+                <div id="t1">글 제목</div>
+                <input type="text" name="title" />
+            </div>
+            <br>
+            <div>
+                <div id="t2">글 카테고리</div>
+                <select name='category'>
+                    <option value="hobby">취미</option>
+                    <option value="food">음식</option>
+                    <option value="programming">프로그래밍</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <div id="t3">글 내용</div>
+                <textarea name="content" cols="40" rows="10"></textarea>
+            </div>
+            <button type="submit" id="last">작성 완료</button>
+        </form>
+    </div> 
+</body>
+</html>
