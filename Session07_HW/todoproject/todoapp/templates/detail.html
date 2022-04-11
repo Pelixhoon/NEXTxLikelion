@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'detail.css' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h4 class="title">To Do 제목</h4>
+            <p>{{ list.title }}</p>
+        </div>
+        <div>
+            <h4 class="title">To Do 내용</h4>
+            <p>{{ list.content }}</p>
+        </div>
+        <div>
+            <h4 class="title">To Do 마감기한</h4>
+            <p>{{ list.deadline }}</p>
+        </div>
+        <br>
+        <a href="{%	url 'home' %}">홈으로</a>
+        <a href="{%	url 'edit' list.pk %}">수정하기</a>
+        <a href="{%	url 'delete' list.pk %}">삭제하기</a>
+    </div>
+</body>
+</html> 

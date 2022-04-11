@@ -1,0 +1,20 @@
+.container {
+    position: relative;
+    left: 40%;
+    top: 50px;
+
+    background-color: rgb(245, 227, 112);
+    border: solid 5px;
+    border-color: rgb(255, 209, 101);
+    width: 300px;
+    height: auto;
+
+    color: black;
+    border-bottom-right-radius: 18%;
+
+}
+
+button {
+    position: relative;
+    left: 35%;
+}

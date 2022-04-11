@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'edit.css' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post" class="container">
+        {% csrf_token %}
+        <div>
+            <label for="title"><strong>title</strong></label>
+            <br>
+            <input type="text" id="title" name="title" value="{{ list.title }}">
+        </div>
+        <br>
+        <div>
+            <label for="content"><strong>content</strong></label>
+            <br>
+            <textarea name="content" id="content" cols="30" rows="10" >{{ list.content }}</textarea>
+            </div>
+            <br>
+            <button type="submit">수정하기</button>
+    </form>
+</body>
+</html>

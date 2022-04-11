@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'new.css' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post" class="container">
+        {% csrf_token %}
+        <div>
+            <label for="title" class="title"><strong>title</strong></label>
+            <br>
+            <input type="text" name="title" id="title" placeholder="title">
+        </div>
+        <br>
+        <div>
+            <label for="content" class="title"><strong>content</strong></label>
+            <br>
+            <textarea name="content" id="content" cols="30" rows="10" placeholder="content"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="deadline" class="title"><strong>deadline</strong></label>
+            <br>
+            <input type="date" name="deadline" id="deadline">
+        </div>
+        <br>
+        <button type="submit">create</button>
+    </form>
+</body>
+</html>
