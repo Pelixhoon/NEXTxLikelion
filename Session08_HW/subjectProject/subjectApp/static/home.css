@@ -1,0 +1,30 @@
+.container {
+    position: relative;
+    left: 40%;
+    top: 50%;
+    color : white;
+}
+
+a, span {
+    color: white;
+}
+.memos {
+    color: white;
+}
+
+* {
+    background-color: lightpink;
+}
+
+h2 {
+    color : black;
+}
+
+#nope {
+    color: black;
+}
+
+.button {
+    color:black;
+}
+

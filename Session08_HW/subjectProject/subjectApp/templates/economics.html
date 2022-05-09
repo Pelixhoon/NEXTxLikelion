@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>경제학과 과목</h2>
+    <ol>
+        {% for subject in economicsMajor %}
+        <div class="list">
+            <li>
+                <div>
+                    <span class="bold">{{ subject.subject_name }}</span>
+                    <span>| {{ subject.major }} |</span>
+                    <span>{{ subject.prof_name }} |</span>
+
+                    <a href="{% url 'editSubject' subject.pk %}" class="button">수정</a>
+                    <a href="{% url 'deleteSubject' subject.pk %}" class="button">삭제</a>
+
+                    <div class="memos"><a href="#"></a>{{ subject.memo|linebreaks }}</a></div>
+                </div>
+            </li>
+        </div>
+        {% endfor %}
+    </ol>
+    
+ 
+</body>
+</html>

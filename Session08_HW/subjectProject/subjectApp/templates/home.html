@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'home.css' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수강과목 List</title>
+</head>
+<body>
+    <div class="container">
+        <h2>모든 전공</h2>
+        <a href="{% url 'addMajor' %}" class="button">전공 추가</a>
+        <ul>
+            {% for major in majors %}
+            <div>
+                <li>
+                    <span class="bold">{{ major.name }}</span>
+                    <a href="{% url 'editMajor' major.pk %}" class="button" id="nope">수정</a>
+                    <a href="{% url 'deleteMajor' major.pk %}" class="button" id="nope">삭제</a>
+                </li>
+            </div>
+            
+            {% endfor %}
+        </ul>
+
+        <h2>모든 과목</h2>
+        <a href="{% url 'addSubject' %}" class="button">과목 추가</a>
+
+        <ol>
+            {% for subject in subjects %}
+            <div>
+                <li>
+                    <div>
+                        <span class="bold">{{ subject.subject_name }}</span>
+                        <span> | {{ subject.major }} |</span>
+                        <span>{{ subject.prof_name }} </span>
+                        <a href="{% url 'editSubject' subject.pk %}" class="button" id="nope">수정</a>
+                        <a href="{% url 'deleteSubject' subject.pk %}" class="button" id="nope">삭제</a>
+                        <div class="memos"><a href="#"></a>{{ subject.memo|linebreaks }}</a></div>
+                    </div>
+                </li>
+            </div>
+            {% endfor %}
+        </ol>
+    </div>
+</body>
+</html>
