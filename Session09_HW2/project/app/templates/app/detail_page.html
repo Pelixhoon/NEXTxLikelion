@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'app/detail_page.css' %}">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>상세 페이지</title>
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <div class="page-container">
+      <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/new-york-city-skyline-panorama-david-desrochers.jpg" alt="newyork manhattan" width="900" height="auto">
+      <br>
+      <br>
+      <a class="btn" href="{% url 'list_page' %}">Back</a>
+      <a class="btn" href="{% url 'edit_page' post.pk %}">Edit</a>
+      <a class="btn" href="{% url 'delete' post.pk %}">Delete</a>
+      <br>
+      <br>
+      <div class="content-container">
+        <h3>{{ post.title }}</h2>
+          <p>{{ post.content }}</p>
+          <p>Views: {{ post.hits }}</p>
+      </div>
+    </div>
+
+</body>
+
+</html>

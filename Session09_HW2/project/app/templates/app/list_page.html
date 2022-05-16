@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'app/list_page.css' %}">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <title>게시글 목록</title>
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <div class="page-container">
+      <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/new-york-city-skyline-panorama-david-desrochers.jpg" alt="newyork manhattan" width="900" height="auto">
+      <header class="page-header">
+        <h2>💻NEXTxLikelion Blog</h2>
+      </header>
+      <a class="write-btn" href="{% url 'create_page' %}">make new post</a>
+      <br><br><br>
+      <h2>Contents</h2>
+      <div class="content-container">
+        <br>
+        <br>
+        {% if not posts %}
+        <p class="if-no-post">게시글이 없습니다.</p>
+        {% endif %}
+        <br>
+        <div>
+          {% for post in posts %}
+          <li>
+            <a class="post-title" href="{% url 'detail_page' post.pk %}">
+              {{ post.title }}</a>
+            <a>-----------------------------------------------------------------------------------------</a>
+            <a class="post-view">Views : {{ post.hits }}</a>
+          </li>
+          {% endfor %}
+        </div>  
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
