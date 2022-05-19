@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'app/edit_page.css' %}">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <div class="page-container">
+      <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/new-york-city-skyline-panorama-david-desrochers.jpg" alt="newyork manhattan" width="900" height="auto">
+      <br>
+      <br>
+      <a class="btn" href="{% url 'detail_page' post.pk %}">Back</a>
+      <br>
+
+      <div class="content-container">
+        <form method="POST">
+          {% csrf_token %}
+          <label for="title">title</label><br>
+          <input name="title" value="{{ post.title }}"/>
+          <br><br>
+          <label for="title">content</label>
+          <br>
+          <textarea name="content">{{ post.content }}</textarea>
+          <br>
+          <button type="submit">Edit</button>
+        </form>
+      </div>
+    </div>
+
+</body>
+
+</html>
