@@ -1,0 +1,30 @@
+{% extends 'base.html' %} {% block css %} {% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'home.css' %}" />
+{% endblock css %}
+
+{% block title %}
+<header class="page-header">
+  <h2>💻NEXTxLikelion Blog</h2>
+</header>
+{% endblock title %}
+
+{% block content%}
+<h2>Contents</h2>
+<div class="content-container">
+
+  {% if not posts %}
+  <p class="if-no-post">게시글이 없습니다.</p>
+  {% endif %}
+  <div>
+    {% for post in posts %}
+    <li>
+      <a class="post-title" href="{% url 'detail' post.pk %}">
+      {{ post.title }}</a>
+      <a>-----------------------------------------------------------------------------------------</a>
+      <a class="post-view">Views : {{ post.hits }}</a>
+    </li>
+    {% endfor %}
+  </div>  
+</div>
+{% endblock %}
+

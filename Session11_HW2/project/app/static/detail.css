@@ -1,0 +1,23 @@
+section {
+  display: flex;
+  position: relative;
+  left: -300px;
+  top: -100px;
+
+}
+
+.button {
+  border: 1px solid;
+  font-size: 20px;
+}
+
+#comment {
+
+  position: relative;
+  top: 100px;
+}
+
+#post {
+  font-size: 23px;
+}
+
