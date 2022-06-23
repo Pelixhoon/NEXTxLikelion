@@ -1,0 +1,28 @@
+{% extends 'app/base.html' %}
+
+{% block css %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'app/edit_page.css' %}">
+{% endblock %}
+
+{% block content %}
+<br>
+<br>
+<a class="btn" href="{% url 'detail_page' post.pk %}">Back</a>
+<br>
+<br>
+<div class="content-container">
+  <form method="POST">
+  {% csrf_token %}
+  <label for="title">title</label><br>
+  <input name="title" value="{{ post.title }}"/>
+  <br>
+  <br>
+  <label for="title">content</label>
+  <br>
+  <textarea name="content">{{ post.content }}</textarea>
+  <br>
+  <button type="submit">Edit</button>
+  </form>
+</div>
+{% endblock content %}

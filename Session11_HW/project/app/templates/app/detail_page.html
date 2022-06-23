@@ -1,0 +1,39 @@
+{% extends 'app/base.html' %}
+
+{% block css %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'app/detail_page.css' %}">
+{% endblock %}
+
+
+{% block content %}
+<br>
+<br>
+<a class="btn" href="{% url 'list_page' %}">Back</a>
+{% if user.is_authenticated and post.author.pk == user.pk %}
+<a class="btn" href="{% url 'edit_page' post.pk %}">Edit</a>
+<a class="btn" href="{% url 'delete' post.pk %}">Delete</a>
+{% endif %}
+<br>
+<br>
+<div class="content-container">
+  <h3>{{ post.title }}</h2>
+    <p>{{ post.content }}</p>
+    <p>Views: {{ post.hits }}</p>
+    <form method="POST">
+      {% csrf_token %}
+      {% if user.is_authenticated and post.author.pk == user.pk %}
+      <input type="text" name="content" placeholder="댓글을 입력해주세요">
+      <button type="submit">작성하기</button>
+    </form>
+    <br>
+    <br>
+    {% for comment in post.comments.all %}
+    <li>
+      {{comment.content}}
+      <a href="{% url 'delete-comment' post.pk comment.pk %}">삭제</a>
+    </li>
+    {% endfor %}
+    {% endif %}
+</div> 
+{% endblock content %}

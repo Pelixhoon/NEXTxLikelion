@@ -1,0 +1,31 @@
+{% extends 'app/base.html' %}
+
+{% block css %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'app/create_page.css' %}">
+{% endblock %}
+
+{% block content %}
+<br>
+<br>
+<a class="btn" href="{% url 'list_page' %}">Back</a>
+<br>
+<br>
+<div class="content-container">
+  <form method="POST">
+    {% csrf_token %}
+    <label for="title">Title</label>
+    <br>
+    <input id="title" name="title" placeholder="제목을 입력하새요">
+    <br><br>
+    <label for="content">Content</label>
+    <br>
+    <textarea id="content" name="content" placeholder="내용을 입력하세요"></textarea>
+    <br>
+    <button type="submit">Submit</button>
+    </form>
+</div>
+
+{% endblock content %}
+
+

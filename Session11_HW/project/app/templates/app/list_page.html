@@ -1,0 +1,36 @@
+{% extends 'app/base.html' %}
+
+{% block css %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'app/list_page.css' %}">
+{% endblock %}
+
+{% block title %}
+<header class="page-header">
+  <h2>💻NEXTxLikelion Blog</h2>
+</header>
+{% endblock title %}
+
+{% block content%}
+<a class="write-btn" href="{% url 'create_page' %}">make new post</a>
+<br><br><br>
+<h2>Contents</h2>
+<div class="content-container">
+<br>
+<br>
+  {% if not posts %}
+  <p class="if-no-post">게시글이 없습니다.</p>
+  {% endif %}
+  <br>
+  <div>
+    {% for post in posts %}
+    <li>
+      <a class="post-title" href="{% url 'detail_page' post.pk %}">
+      {{ post.title }}</a>
+      <a>-----------------------------------------------------------------------------------------</a>
+      <a class="post-view">Views : {{ post.hits }}</a>
+    </li>
+    {% endfor %}
+  </div>  
+</div>
+{% endblock %}

@@ -1,0 +1,59 @@
+.page-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.page-header {
+  width: 700px;
+  height: 200px;
+  font-size: 50px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  background-color: grey;
+  width: 200px;
+  height: 40px;
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: lightskyblue;
+}
+
+h2 {
+  color: white;
+  margin: 0px;
+}
+
+.content-container {
+  border: solid;
+  margin: 5px;
+  padding: 5px;
+  width: 900px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+input {
+  width: 200px;
+  height: 40px;
+}
+
+textarea {
+  width: 400px;
+  height: 200px;
+}
+
+button {
+  width: 70px;
+  height: 40px;
+  font: 100px;
+}

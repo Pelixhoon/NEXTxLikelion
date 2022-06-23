@@ -1,0 +1,32 @@
+.page-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  background-color: grey;
+  width: 200px;
+  height: 40px;
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+.btn:hover {
+  background-color: lightskyblue;
+}
+
+h2 {
+  color: white;
+  margin: 0px;
+}
+
+.content-container {
+  border: solid;
+  margin: 15px;
+  padding: 5px;
+  width: 900px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
