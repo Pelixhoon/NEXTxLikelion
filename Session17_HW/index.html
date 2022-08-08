@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>NEXT X LIKELION SUMMER SCHEDULES</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦁</text></svg>"
+    />
+    <link rel="stylesheet" href="src/css/index.css" />
+  </head>
+  <body>
+    <!-- 모달을 강조할 배경 레이어 -->
+    <div class="modal-container open">
+      <!-- 배경 위에 얹어지는 실제 모달 컨테이너 -->
+      <div class="modal">
+        <!-- 모달 상단 헤더 -->
+        <div class="modal-header mb-10">
+          <!-- 상단 제목 -->
+          <p class="modal-title font-bold mb-10">NOTICE</p>
+          <!-- 닫기 버튼 -->
+          <button class="modal-close">
+            <img src="src/assets/icons/close-x.svg" alt="close" />
+          </button>
+        </div>
+        <!-- 모달 내용 -->
+        <article class="modal-body">
+          "우리는 짱짱 넥스트멋사입니다" 삼창 실시 <br />하나~ 우리는 짱짱
+          넥스트멋사입니다!<br />둘~ 우리는 짱짱 넥스트멋사입니다!<br />셋~
+          우리는 짱짱 넥스트멋사입니다!
+        </article>
+        <!-- (실습) 오늘 하루 보지 않기 버튼 -->
+        <button class="modal-stop-button text-left text-gray">
+          ✔️오늘 하루 보지 않기
+        </button>
+      </div>
+    </div>
+
+    <!-- --- -->
+    <!-- 모달을 강조할 배경 레이어 -->
+    <div class="modal-container2 open">
+      <!-- 배경 위에 얹어지는 실제 모달 컨테이너 -->
+      <div class="modal2">
+        <!-- 모달 상단 헤더 -->
+        <div class="modal-header2 mb-10">
+          <!-- 상단 제목 -->
+          <p class="modal-title2 font-bold mb-10">공지사항</p>
+          <!-- 닫기 버튼 -->
+          <button class="modal-close2">
+            <img src="src/assets/icons/close-x.svg" alt="close" />
+          </button>
+        </div>
+        <!-- 모달 내용 -->
+        <article class="modal-body2">
+          여행 끝나고 더 열심히 구현해보겠습니다...<br>
+          멋사 화이팅!
+        </article>
+        <!-- (실습) 오늘 하루 보지 않기 버튼 -->
+        <button class="modal-stop-button2 text-left text-gray">
+          ✔️다시 보지 않기
+        </button>
+      </div>
+    </div>
+    <!-- --- -->
+
+    <div id="app" class="p-10">
+      <div class="flex justify-center mt-30 mb-30 w-100">
+        <div class="w-100">
+          <header class="mt-30 mb-30">
+            <a href="/" class="text-black">
+              <h1 class="text-center font-bold">멋쟁이 방학</h1>
+            </a>
+            <nav class="flex justify-center flex-wrap">
+              <button
+                data-category-name="session"
+                class="category-name btn bg-white shadow ml-10 mr-10"
+              >
+                🧑🏼‍🏫 세션
+              </button>
+              <button
+                data-category-name="event"
+                class="category-name btn bg-white shadow ml-10 mr-10"
+              >
+                🎫 행사
+              </button>
+              <button
+                data-category-name="study"
+                class="category-name btn bg-white shadow ml-10 mr-10"
+              >
+                📖 스터디
+              </button>
+            </nav>
+          </header>
+          <main class="mt-10 flex justify-center">
+            <div
+              class="btn-open-modal btn mb-2 bg-purple shadow ml-10 mr-10 text-center">
+              모달 열기
+            </div>
+
+            <!-- --- -->
+            <div class="btn-open-modal2 btn mb-2 bg-purple shadow ml-10 mr-10 text-center">
+                공지사항
+            </div>
+            <!-- --- -->
+
+            <div class="wrapper bg-white p-50">
+              <div class="heading flex justify-between">
+                <h2 class="category-title mt-10">🧑🏼‍🏫 세션</h2>
+              </div>
+              <ul id="schedule-list" class="display-flex flex-col"></ul>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./src/js/index.js"></script>
+  </body>
+</html>

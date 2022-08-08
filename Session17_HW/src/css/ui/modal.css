@@ -1,0 +1,162 @@
+.modal-container {
+  opacity: 0;
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5); /* 흐린 배경 */
+  backdrop-filter: blur(4px); /* 블러 효과 */
+  transition: opacity 0.25s ease;
+  /* 디폴트는 보이지 않게 */
+  visibility: hidden;
+}
+
+.modal-container.open {
+  /* open 클래스가 추가되면 보이게 */
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal {
+  position: relative;
+  transition: top 0.25s ease;
+  width: 500px;
+  height: fit-content;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  margin: auto;
+  padding: 15px;
+  overflow: auto;
+  background: #fff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  .modal {
+    width: 90%;
+    height: 90%;
+    box-sizing: border-box;
+  }
+}
+
+.modal-header {
+  width: 100%;
+  display: flex;
+}
+
+.modal-title {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.modal-close {
+  width: 30px;
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  background: no-repeat;
+  border: none;
+  padding: 0;
+}
+
+.modal-body {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.modal-stop-button {
+  left: 0;
+  cursor: pointer;
+  background: no-repeat;
+  border: none;
+}
+
+
+/* --- */
+
+.modal-container2 {
+  opacity: 0;
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5); /* 흐린 배경 */
+  backdrop-filter: blur(4px); /* 블러 효과 */
+  transition: opacity 0.25s ease;
+  /* 디폴트는 보이지 않게 */
+  visibility: hidden;
+}
+
+.modal-container2.open {
+  /* open 클래스가 추가되면 보이게 */
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal2 {
+  position: relative;
+  transition: top 0.25s ease;
+  width: 500px;
+  height: fit-content;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  margin: auto;
+  padding: 15px;
+  overflow: auto;
+  background: #fff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  .modal2 {
+    width: 90%;
+    height: 90%;
+    box-sizing: border-box;
+  }
+}
+
+.modal-header2 {
+  width: 100%;
+  display: flex;
+}
+
+.modal-title2 {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.modal-close2 {
+  width: 30px;
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  background: no-repeat;
+  border: none;
+  padding: 0;
+}
+
+.modal-body2 {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.modal-stop-button2 {
+  left: 0;
+  cursor: pointer;
+  background: no-repeat;
+  border: none;
+}
